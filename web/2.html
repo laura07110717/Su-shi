@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #a {
+        height: 50px;
+        width: 80px;
+        margin-top: 80px;
+        margin-bottom: 100px; 
+        margin-left: 100px;
+        margin-right: 100px; 
+        color: darkslategray;
+        background-color: rgb(241, 246, 248);
+        }
+
+    #next {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 50px;
+        width: 60px;
+        font-size: 40px;
+        margin-bottom: 20px;
+        margin-right: 20px; 
+    }
+
+
+    #pre {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 50px;
+        width: 60px;
+        font-size: 40px;
+        margin-bottom: 20px; 
+        margin-left: 20px;
+    }
+    #year{
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        margin-bottom: 300px;
+        margin-left: 200px;
+        margin-right: 300px;
+        font-size: 60px;
+        font-family: ;
+        color: rgb(38, 107, 107);
+        background-color: rgb(239, 242, 245,0.4);
+        background-size: cover;
+
+    }
+
+    body {
+        background: rgba(246, 244, 244, 0.3) url('1068.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    #p{
+        background-color: rgb(0, 0, 0,0.5);
+        background-size: cover;
+        margin-top: 0px;
+        margin-left: 200px;
+        margin-right: 200px;
+        color: azure;
+        font-size: 20px;
+    }
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+            transform: translateY(20px);
+        }
+    to{
+        opacity ;
+        transform: translateY(0);
+    }
+    }
+    #p{
+        animation: fadeIn 1s ease-out;
+    }
+    </style>
+</head>
+<body>
+    <button id="a" onclick="goToPage('a')" title="回首頁">返回</button>
+    <button id="next" onclick="goToPage('b')" title="向下一篇">></button>
+    <button id="pre" onclick="goToPage('c')" title="向上一篇"><</button>
+    <h1 id="year">1068</h1>
+    <p id="p">熙寧元年（西元1068年），宋神宗即位，服滿喪期的蘇軾離開故鄉，出任監官浩院（掌管官吏辭令書的官）。此時，
+        神宗為挽救面臨困境的國家財政，任用王安石為宰相，並推行其提倡的新法。蘇軾雖不滿當時的社會現狀，但也不完全支持王安
+        石的改革思想，他認為即使變法也應逐步進行，而非如王安石變法般地急於求利。所以他不斷上書神宗，呈奏〈議學校與貢舉劄子
+        〉、〈諫買浙燈狀〉，又上〈上皇帝書〉及〈萬言書〉，但都未被神宗接受。蘇軾因而成為當時反對王安石等新法派中的舊法派的一
+        員，在政治上受到嚴重排擠，有人甚至為此誣告蘇軾販賣私鹽。 熙寧四年（西元1071年），年方三十六歲的蘇軾見變法大局已定，反對
+        也無用，他更不願陷入宗派鬥爭的漩渦中，便請調杭州任職。在杭州不但結識許多知交，也作了不少的詩歌，如著名的〈飲湖上初晴後雨〉、
+        〈六月二十七日於望湖樓醉書〉等。蘇軾後來被調任到徐州、湖州。神宗元豐二年（西元1079年），在他移任湖州的第三個月，有一天突然闖
+        進一位朝廷欽差，不容分說便把他捉拿進京。原來是一群和蘇軾有嫌隙的御史，為討好王安石，便指稱蘇軾在詩文中歪曲事實，誹謗朝廷，請皇上
+        下令司法官員判罪。不久，蘇軾被送人獄中，這就是著名的「烏台詩案」。對蘇軾的審問進行了一百多天，蘇軾的政敵李定等人，千方百計羅織罪名，妄
+        圖把蘇軾置於死地。他們的卑鄙行為引起很多正義之士的不滿。除湖州、杭州等地的百姓請和尚念經為蘇軾祈福外，前太子少師（太子的老師）張方平、
+        前吏部侍郎范鎮替他上疏求情，於是情勢緩和下來。再加上神宗原本就喜愛他的文學，又有生病的曹太后（神宗祖母）為他說情，最後只定了蘇軾「譏諷
+        政事」之罪。神宗皇帝判他流放黃州，蘇軾終於免於一死。
+    </p>
+    <script>function goToPage(page) {
+        if (page === 'a') {
+            window.location.href = 'web.html';
+        } else if (page === 'b') {
+            window.location.href = '3.html';
+        } else if (page === 'c') {
+            window.location.href = '1.html';
+        }
+    }</script>
+</body>
+</html>
